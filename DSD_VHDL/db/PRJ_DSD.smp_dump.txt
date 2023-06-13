@@ -1,0 +1,17 @@
+
+State Machine - |PRJ_DSD|UART_tx:UART_PORTMAP|state_uart
+Name state_uart.TERMINATE state_uart.STOP_BIT state_uart.DATA_BITS state_uart.START_BIT state_uart.IDLE 
+state_uart.IDLE 0 0 0 0 0 
+state_uart.START_BIT 0 0 0 1 1 
+state_uart.DATA_BITS 0 0 1 0 1 
+state_uart.STOP_BIT 0 1 0 0 1 
+state_uart.TERMINATE 1 0 0 0 1 
+
+State Machine - |PRJ_DSD|LCD_CT:LCD_CT_PORTMAP|state
+Name state.send state.line2 state.line1 state.RESETLINE state.initialize state.power_up 
+state.power_up 0 0 0 0 0 0 
+state.initialize 0 0 0 0 1 1 
+state.RESETLINE 0 0 0 1 0 1 
+state.line1 0 0 1 0 0 1 
+state.line2 0 1 0 0 0 1 
+state.send 1 0 0 0 0 1 

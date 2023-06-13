@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.ALL;
+use ieee.std_logic_arith.all;
+
+entity LCD_DATA is 
+port (
+	count_s1 : in  integer range 0 to 999;
+	count_s2 : in  integer range 0 to 999;
+	line1_buffer : out std_logic_vector(127 downto 0);
+	line2_buffer : out std_logic_vector(127 downto 0)
+);
+end LCD_DATA ;
+
+architecture bhv_lcd_data of LCD_DATA IS
+signal tram1,tram2,chuc1,chuc2,dv1,dv2 : integer range 0 to 9 :=0;
+begin	
+line1_buffer(127 downto 24) <=x"4C4F414920313A202020202020";
+line2_buffer(127 downto 24) <=x"4C4F414920323A202020202020";
+	--conv type 1
+	tram1 <= count_s1/100;
+	chuc1 <= (count_s1 - (tram1*100))/10;
+	dv1 <= count_s1 -(tram1*100)- (chuc1*10);
+	--conv type 2
+	tram2 <= count_s2/100;
+	chuc2 <= (count_s2 -(tram2*100))/10;
+	dv2 <= count_s2 -(tram2*100)- (chuc2*10);
+	--line 1
+line1_buffer(23 downto 20) <= "0011";
+line1_buffer(19 downto 16) <= CONV_STD_LOGIC_VECTOR(tram1,4);
+line1_buffer(15 downto 12) <= "0011";
+line1_buffer( 11 downto 8) <= CONV_STD_LOGIC_VECTOR(chuc1,4);
+line1_buffer(7 downto 4) 	<= "0011";
+line1_buffer (3 downto 0) 	<= CONV_STD_LOGIC_VECTOR(dv1,4);
+	--line 2	
+line2_buffer(23 downto 16) <= "0011"& CONV_STD_LOGIC_VECTOR(tram2,4);
+line2_buffer(15 downto 8) <= "0011"& CONV_STD_LOGIC_VECTOR(chuc2,4);
+line2_buffer (7 downto 0) <= "0011"&CONV_STD_LOGIC_VECTOR(dv2,4);
+end bhv_lcd_data;
