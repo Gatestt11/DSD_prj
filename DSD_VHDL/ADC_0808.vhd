@@ -53,7 +53,7 @@ begin
 				cnt:= 0;
 			end if;
 			
-			if(unsigned(data_adc_in) > 30) then
+			if(unsigned(data_adc_in) > 50) then
 				start_alarm <= '1';
 			else
 				start_alarm <= '0';

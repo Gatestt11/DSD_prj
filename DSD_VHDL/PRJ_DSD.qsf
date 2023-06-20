@@ -37,14 +37,14 @@
 
 
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C5AF256I8
-set_global_assignment -name TOP_LEVEL_ENTITY LCD_DATA
+set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name TOP_LEVEL_ENTITY PRJ_DSD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:16:50  JUNE 11, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name VHDL_FILE ADC_0808.vhd
 set_global_assignment -name VHDL_FILE LCD_CT.vhd
@@ -55,4 +55,36 @@ set_global_assignment -name VHDL_FILE DIV_clk.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_F2 -to rs
+set_location_assignment PIN_AD15 -to clk
+set_location_assignment PIN_T29 -to reset_n
+set_location_assignment PIN_E21 -to TX
+set_location_assignment PIN_E1 -to lcd_data_x[0]
+set_location_assignment PIN_E3 -to lcd_data_x[1]
+set_location_assignment PIN_D2 -to lcd_data_x[2]
+set_location_assignment PIN_D3 -to lcd_data_x[3]
+set_location_assignment PIN_C1 -to lcd_data_x[4]
+set_location_assignment PIN_C2 -to lcd_data_x[5]
+set_location_assignment PIN_C3 -to lcd_data_x[6]
+set_location_assignment PIN_B2 -to lcd_data_x[7]
+set_location_assignment PIN_F3 -to rw
+set_location_assignment PIN_E2 -to e
+set_location_assignment PIN_T28 -to start_TX
+set_location_assignment PIN_F1 -to tt
+set_location_assignment PIN_G3 -to tt2
+set_location_assignment PIN_C30 -to data_adc_in[0]
+set_location_assignment PIN_C29 -to data_adc_in[1]
+set_location_assignment PIN_D29 -to data_adc_in[2]
+set_location_assignment PIN_D28 -to data_adc_in[3]
+set_location_assignment PIN_G25 -to data_adc_in[4]
+set_location_assignment PIN_G26 -to data_adc_in[5]
+set_location_assignment PIN_G29 -to data_adc_in[6]
+set_location_assignment PIN_G30 -to data_adc_in[7]
+set_location_assignment PIN_G27 -to eoc
+set_location_assignment PIN_G28 -to start_ADC
+set_location_assignment PIN_L24 -to ale
+set_location_assignment PIN_L25 -to oe
+set_location_assignment PIN_AJ6 -to start_alarm_light
+set_location_assignment PIN_L28 -to clk_adc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

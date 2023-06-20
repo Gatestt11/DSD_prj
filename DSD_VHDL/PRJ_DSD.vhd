@@ -18,9 +18,12 @@ port (
 	oe 	: OUT    STD_LOGIC;
 	data_adc_in: IN std_logic_vector (7 downto 0);
 	eoc	: IN std_LOGIC;
+	clk_adc :  OUT    STD_LOGIC;
 	--for warring alarm
 	start_alarm_light : OUT std_LOGIC;
 	--for LCD
+	 tt : out std_LOGIC;
+	 tt2 : out std_LOGIC;
     reset_n    : IN    STD_LOGIC;  --active low reinitializes lcd
     rw, rs, e  : OUT   STD_LOGIC;  --read/write, setup/data, and enable for lcd
     lcd_data_x   : OUT   STD_LOGIC_VECTOR(7 DOWNTO 0) --data signals for lcd
@@ -33,6 +36,7 @@ architecture behav of PRJ_DSD IS
 	 signal start_alarm : STD_LOGIC;
 	 signal CLK_200 : STD_LOGIC;
 	 signal START_TX_2 : STD_LOGIC;
+	 signal chuc1,dv1 : integer range 0 to 9 :=0;
 	 
 -----COMPONENT LCD CONTROLLER-------------------------------------
 component LCD_CT IS
@@ -50,7 +54,9 @@ port (
 	data : in  std_logic_vector(7 downto 0);
 	start_alarm : in  std_logic;
 	line1_buffer : out std_logic_vector(127 downto 0);
-	line2_buffer : out std_logic_vector(127 downto 0)
+	line2_buffer : out std_logic_vector(127 downto 0);
+	chuc1 : out integer range 0 to 9 :=0;
+	dv1 : out integer range 0 to 9 :=0
 );
 END component;
 -----COMPONENT ADC_0808 -------------------------------------------
@@ -72,7 +78,8 @@ port (
 	start: in std_logic;
 	CLK: in std_logic;
 	TX: out std_logic;
-	reg_buffer : in std_logic_vector(7 downto 0)
+	chuc1 : in integer range 0 to 9 :=0;
+	dv1 : in integer range 0 to 9 :=0
 );
 end component;
 -----COMPONENT DIV_clk -------------------------------------------
@@ -84,15 +91,18 @@ port(
 end component;
 	
 begin
+	tt <= '1';
+	tt2 <= '1';
+	clk_adc <= clk_200;
 -----PORT MAP-----------------------------------------------------
 	LCD_CT_PORTMAP : LCD_CT
 		port map (clk,reset_n,rw,rs,e,lcd_data_x,line1_buffer,line2_buffer);
 		
 	LCD_CONVERT_DATA : LCD_DATA
-		port map (data_adc_in, start_alarm,line1_buffer,line2_buffer);
+		port map (data_adc_in, start_alarm,line1_buffer,line2_buffer,chuc1,dv1);
 		
 	UART_PORTMAP : UART_tx
-		port map (start_TX,CLK,TX,data_adc_in);
+		port map (start_TX,CLK,TX,chuc1,dv1);
 		
 	ADC_PORTMAP : ADC_0808
 		port map (CLK_200,start_ADC,ale,oe,data_adc_in,eoc,START_TX_2, start_alarm);

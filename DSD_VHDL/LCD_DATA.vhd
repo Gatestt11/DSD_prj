@@ -1,41 +1,61 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.ALL;
-use ieee.std_logic_arith.all;
 
 entity LCD_DATA is 
 port (
 	data : in  std_logic_vector(7 downto 0);
 	start_alarm : in  std_logic;
 	line1_buffer : out std_logic_vector(127 downto 0);
-	line2_buffer : out std_logic_vector(127 downto 0)
+	line2_buffer : out std_logic_vector(127 downto 0);
+	chuc1 : out integer range 0 to 9 :=0;
+	dv1 : out integer range 0 to 9 :=0
 );
 end LCD_DATA ;
 
 architecture bhv_data of LCD_DATA IS
 
 signal data_integer,data_temp : integer := 0 ;
-signal chuc1,dv1 : integer range 0 to 9 :=0;
+signal temp_tram,temp_chuc,temp_dv : integer range 0 to 9 :=0;
+signal signed_1 : signed(7 downto 0);
 
 begin
 --convert data---------------------
-	line1_buffer(127 downto 24) <=x"4C4F414920313A202020202020";
-	line2_buffer(127 downto 24) <=x"4C4F414920323A202020202020";
-	--data_us <= unsigned(data);
-	--data_integer <= to_integer(data_us);
-	data_temp <= data_integer/256;
-	chuc1 <= data_temp / 10;
-	dv1 <= data_temp - chuc1;
+	line1_buffer(127 downto 0) <=x"7E2050524F4A4543542020445344207E";
+	line2_buffer(127 downto 64) <=x"54656D7020203D20";
+	line2_buffer(39 downto 24) <= x"6F43";
+
+	data_integer <= to_integer(unsigned(data));
+	--data_integer <=40;
+	data_temp <= data_integer*5*100/256 + 10;
+	--temp_tram <= data_temp/100;
+	temp_chuc <= (data_temp mod 100)/10;
+	--temp_chuc <= data_temp / 10;
+	chuc1 <= temp_chuc;
+	--temp_dv <= data_temp - temp_chuc*10;
+	temp_dv <= data_temp mod 10;
+	dv1 <= temp_dv;
 	process(start_alarm,data)
 	begin
+	line2_buffer(63 downto 56) <= "0010"&"0000";
 	if(start_alarm = '0') then
-		line2_buffer(23 downto 16) <= "0011"& CONV_STD_LOGIC_VECTOR(chuc1,4);
-		line2_buffer(15 downto 8) <= "0011"& CONV_STD_LOGIC_VECTOR(dv1,4);
+	-- if(temp_tram = 0) then
+	 --		line2_buffer(63 downto 56) <= "0010"&"0000";
+	--else
+		--line2_buffer(63 downto 56) <= "0011"& std_logic_vector(to_unsigned(temp_tram,4));
+	--end if;
+		line2_buffer(55 downto 48) <= "0011"& std_logic_vector(to_unsigned(temp_chuc,4));
+		line2_buffer(47 downto 40) <= "0011"& std_logic_vector(to_unsigned(temp_dv,4));
+		line2_buffer(23 downto 16) <= "0010"&"0000";
+		line2_buffer(15 downto 8)  <= "0010"&"0000";
+		line2_buffer (7 downto 0)  <= "0010"&"0000";
 	else 
-		line2_buffer(23 downto 16) <= "0011"& CONV_STD_LOGIC_VECTOR(chuc1,4);
-		line2_buffer(15 downto 8) <= "0011"& CONV_STD_LOGIC_VECTOR(dv1,4);
-		line2_buffer (7 downto 0) <= "0011"&"0010";
+		--line2_buffer(63 downto 56) <= "0011"& std_logic_vector(to_unsigned(temp_tram,4));
+		line2_buffer(55 downto 48) <= "0011"& std_logic_vector(to_unsigned(temp_chuc,4));
+		line2_buffer(47 downto 40) <= "0011"& std_logic_vector(to_unsigned(temp_dv,4));
+		line2_buffer(23 downto 16) <= "0010"&"0001";
+		line2_buffer(15 downto 8) <= "0010"&"0001";
+		line2_buffer (7 downto 0) <= "0010"&"0001";
 	end if;
 	end process;
 end bhv_data;
