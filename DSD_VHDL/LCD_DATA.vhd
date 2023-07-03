@@ -15,7 +15,7 @@ end LCD_DATA ;
 
 architecture bhv_data of LCD_DATA IS
 
-signal data_integer,data_temp : integer := 0 ;
+signal data_integer,data_temp : integer range 0 to 200 := 0 ;
 signal temp_tram,temp_chuc,temp_dv : integer range 0 to 9 :=0;
 signal signed_1 : signed(7 downto 0);
 
@@ -26,31 +26,24 @@ begin
 	line2_buffer(39 downto 24) <= x"6F43";
 
 	data_integer <= to_integer(unsigned(data));
-	--data_integer <=40;
-	data_temp <= data_integer*5*100/256 + 10;
-	--temp_tram <= data_temp/100;
-	temp_chuc <= (data_temp mod 100)/10;
-	--temp_chuc <= data_temp / 10;
+	data_temp <= data_integer*5*100/256 + 13;
+	temp_tram <= data_temp/100;
+	temp_chuc <= (data_temp - temp_tram*100)/10;
 	chuc1 <= temp_chuc;
-	--temp_dv <= data_temp - temp_chuc*10;
-	temp_dv <= data_temp mod 10;
+	temp_dv <= data_temp - temp_tram*100-temp_chuc*10;
 	dv1 <= temp_dv;
 	process(start_alarm,data)
 	begin
-	line2_buffer(63 downto 56) <= "0010"&"0000";
+	--line2_buffer(63 downto 56) <= "0010"&"0000";
 	if(start_alarm = '0') then
-	-- if(temp_tram = 0) then
-	 --		line2_buffer(63 downto 56) <= "0010"&"0000";
-	--else
-		--line2_buffer(63 downto 56) <= "0011"& std_logic_vector(to_unsigned(temp_tram,4));
-	--end if;
+		line2_buffer(63 downto 56) <= "0010"&"0000";
 		line2_buffer(55 downto 48) <= "0011"& std_logic_vector(to_unsigned(temp_chuc,4));
 		line2_buffer(47 downto 40) <= "0011"& std_logic_vector(to_unsigned(temp_dv,4));
 		line2_buffer(23 downto 16) <= "0010"&"0000";
 		line2_buffer(15 downto 8)  <= "0010"&"0000";
 		line2_buffer (7 downto 0)  <= "0010"&"0000";
 	else 
-		--line2_buffer(63 downto 56) <= "0011"& std_logic_vector(to_unsigned(temp_tram,4));
+		line2_buffer(63 downto 56) <= "0011"& std_logic_vector(to_unsigned(1,4));
 		line2_buffer(55 downto 48) <= "0011"& std_logic_vector(to_unsigned(temp_chuc,4));
 		line2_buffer(47 downto 40) <= "0011"& std_logic_vector(to_unsigned(temp_dv,4));
 		line2_buffer(23 downto 16) <= "0010"&"0001";

@@ -119,10 +119,10 @@ GND                          : AA20      : gnd    :                   :         
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 GND_PLL4                     : AA22      : gnd    :                   :         :           :                
 GND*                         : AA23      :        :                   :         : 6         :                
-GND*                         : AA24      :        :                   :         : 6         :                
+led_bin[7]                   : AA24      : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : AA25      :        :                   :         : 6         :                
 GND*                         : AA26      :        :                   :         : 6         :                
-GND*                         : AA27      :        :                   :         : 6         :                
+led_bin[6]                   : AA27      : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : AA28      :        :                   :         : 6         :                
 GND*                         : AA29      :        :                   :         : 6         :                
 GND*                         : AA30      :        :                   :         : 6         :                
@@ -137,8 +137,8 @@ GND_PLL1                     : AB8       : gnd    :                   :         
 VCCD_PLL1                    : AB9       : power  :                   : 1.2V    :           :                
 GND                          : AB10      : gnd    :                   :         :           :                
 VCCIO8                       : AB11      : power  :                   : 3.3V    : 8         :                
-GND*                         : AB12      :        :                   :         : 8         :                
-GND*                         : AB13      :        :                   :         : 8         :                
+led_warring[13]              : AB12      : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[11]              : AB13      : output : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : AB14      : gnd    :                   :         :           :                
 VCCIO8                       : AB15      : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : AB16      : power  :                   : 3.3V    : 7         :                
@@ -166,9 +166,9 @@ GND*                         : AC7       :        :                   :         
 GND_PLL1                     : AC8       : gnd    :                   :         :           :                
 VCCA_PLL1                    : AC9       : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : AC10      : gnd    :                   :         :           :                
-GND*                         : AC11      :        :                   :         : 8         :                
-GND*                         : AC12      :        :                   :         : 8         :                
-GND*                         : AC13      :        :                   :         : 8         :                
+led_warring[14]              : AC11      : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[12]              : AC12      : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[10]              : AC13      : output : 3.3-V LVTTL       :         : 8         : Y              
 GND*                         : AC14      :        :                   :         : 8         :                
 GND+                         : AC15      :        :                   :         : 7         :                
 GND*                         : AC16      :        :                   :         : 7         :                
@@ -193,13 +193,13 @@ GND*                         : AD4       :        :                   :         
 GND*                         : AD5       :        :                   :         : 1         :                
 GND*                         : AD6       :        :                   :         : 1         :                
 GND*                         : AD7       :        :                   :         : 1         :                
-GND*                         : AD8       :        :                   :         : 8         :                
-GND*                         : AD9       :        :                   :         : 8         :                
+led_warring[16]              : AD8       : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[15]              : AD9       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND*                         : AD10      :        :                   :         : 8         :                
 GND*                         : AD11      :        :                   :         : 8         :                
 GND*                         : AD12      :        :                   :         : 8         :                
 GND*                         : AD13      :        :                   :         : 8         :                
-GND*                         : AD14      :        :                   :         : 8         :                
+led_warring[9]               : AD14      : output : 3.3-V LVTTL       :         : 8         : Y              
 clk                          : AD15      : input  : 3.3-V LVTTL       :         : 7         : Y              
 GND*                         : AD16      :        :                   :         : 7         :                
 GND*                         : AD17      :        :                   :         : 7         :                
@@ -308,8 +308,8 @@ GND*                         : AG29      :        :                   :         
 VCCIO6                       : AG30      : power  :                   : 3.3V    : 6         :                
 GND*                         : AH1       :        :                   :         : 1         :                
 GND*                         : AH2       :        :                   :         : 1         :                
-GND*                         : AH3       :        :                   :         : 8         :                
-GND*                         : AH4       :        :                   :         : 8         :                
+led_warring[8]               : AH3       : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[5]               : AH4       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND*                         : AH5       :        :                   :         : 8         :                
 GND                          : AH6       : gnd    :                   :         :           :                
 GND*                         : AH7       :        :                   :         : 8         :                
@@ -337,12 +337,12 @@ GND*                         : AH28      :        :                   :         
 GND*                         : AH29      :        :                   :         : 6         :                
 GND*                         : AH30      :        :                   :         : 6         :                
 GND                          : AJ1       : gnd    :                   :         :           :                
-GND*                         : AJ2       :        :                   :         : 8         :                
-GND*                         : AJ3       :        :                   :         : 8         :                
-GND*                         : AJ4       :        :                   :         : 8         :                
-GND*                         : AJ5       :        :                   :         : 8         :                
-start_alarm_light            : AJ6       : output : 3.3-V LVTTL       :         : 8         : Y              
-GND*                         : AJ7       :        :                   :         : 8         :                
+led_warring[7]               : AJ2       : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[6]               : AJ3       : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[3]               : AJ4       : output : 3.3-V LVTTL       :         : 8         : Y              
+led_warring[2]               : AJ5       : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AJ6       :        :                   :         : 8         :                
+led_warring[17]              : AJ7       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND*                         : AJ8       :        :                   :         : 8         :                
 GND*                         : AJ9       :        :                   :         : 8         :                
 GND*                         : AJ10      :        :                   :         : 8         :                
@@ -351,7 +351,7 @@ GND*                         : AJ12      :        :                   :         
 GND*                         : AJ13      :        :                   :         : 8         :                
 GND*                         : AJ14      :        :                   :         : 8         :                
 GND*                         : AJ15      :        :                   :         : 8         :                
-GND*                         : AJ16      :        :                   :         : 7         :                
+led_warring[0]               : AJ16      : output : 3.3-V LVTTL       :         : 7         : Y              
 GND*                         : AJ17      :        :                   :         : 7         :                
 GND*                         : AJ18      :        :                   :         : 7         :                
 GND*                         : AJ19      :        :                   :         : 7         :                
@@ -367,9 +367,9 @@ GND*                         : AJ28      :        :                   :         
 GND*                         : AJ29      :        :                   :         : 6         :                
 GND                          : AJ30      : gnd    :                   :         :           :                
 GND                          : AK2       : gnd    :                   :         :           :                
-GND*                         : AK3       :        :                   :         : 8         :                
+led_warring[4]               : AK3       : output : 3.3-V LVTTL       :         : 8         : Y              
 VCCIO8                       : AK4       : power  :                   : 3.3V    : 8         :                
-GND*                         : AK5       :        :                   :         : 8         :                
+led_warring[1]               : AK5       : output : 3.3-V LVTTL       :         : 8         : Y              
 GND*                         : AK6       :        :                   :         : 8         :                
 GND*                         : AK7       :        :                   :         : 8         :                
 GND*                         : AK8       :        :                   :         : 8         :                
@@ -926,11 +926,11 @@ VCCINT                       : W19       : power  :                   : 1.2V    
 GND                          : W20       : gnd    :                   :         :           :                
 GND*                         : W21       :        :                   :         : 6         :                
 GND*                         : W22       :        :                   :         : 6         :                
-GND*                         : W23       :        :                   :         : 6         :                
+led_bin[2]                   : W23       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : W24       :        :                   :         : 6         :                
-GND*                         : W25       :        :                   :         : 6         :                
+led_bin[1]                   : W25       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : W26       :        :                   :         : 6         :                
-GND*                         : W27       :        :                   :         : 6         :                
+led_bin[0]                   : W27       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : W28       :        :                   :         : 6         :                
 GND*                         : W29       :        :                   :         : 6         :                
 GND*                         : W30       :        :                   :         : 6         :                
@@ -956,11 +956,11 @@ GND                          : Y19       : gnd    :                   :         
 VCCIO6                       : Y20       : power  :                   : 3.3V    : 6         :                
 GND*                         : Y21       :        :                   :         : 6         :                
 GND*                         : Y22       :        :                   :         : 6         :                
-GND*                         : Y23       :        :                   :         : 6         :                
-GND*                         : Y24       :        :                   :         : 6         :                
+led_bin[5]                   : Y23       : output : 3.3-V LVTTL       :         : 6         : Y              
+led_bin[4]                   : Y24       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : Y25       :        :                   :         : 6         :                
 GND*                         : Y26       :        :                   :         : 6         :                
-GND*                         : Y27       :        :                   :         : 6         :                
+led_bin[3]                   : Y27       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : Y28       :        :                   :         : 6         :                
 GND*                         : Y29       :        :                   :         : 6         :                
 GND*                         : Y30       :        :                   :         : 6         :                

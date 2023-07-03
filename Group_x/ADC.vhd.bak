@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
+
+LiBRARY std; 
+USE std.standard.all; 
+
+entity ADC is
+port(
+	 clk : in std_LOGIC;
+	 start : out std_logic;
+	 ale : out std_logic;
+	 oe : out std_logic;
+	 data_adc_in: in std_logic_vector (7 downto 0);
+	 eoc: in std_LOGIC;
+	 start_tx : out std_logic;
+	 start_alarm : out std_logic
+ );
+end ADC;
+
+architecture behav of ADC is
+	signal flag : std_logic;
+begin	
+	
+	process(clk)
+		variable cnt: integer range 0 to 500000 := 0;
+	begin
+		if(rising_edge(clk)) then
+			cnt := cnt +1;
+			if(cnt = 1) then 
+				ale <= '1';		
+				start <='1';		
+			end if;
+			
+			if(cnt = 3) then
+				ale <='0';			
+				start <= '0';		
+				flag <= '1';
+			end if;
+			
+			if((cnt > 3) and (eoc = '1') and (flag = '1')) then
+				
+				oe <= '1';	
+				start_tx <= '1';		-- start TX
+				flag <= '0';
+			
+			end if;
+			
+			
+			if(cnt >= 400000) then		-- cycle time 2s to recives data
+				oe <= '0';	
+				start_tx <= '0';
+				cnt:= 0;
+			end if;
+			
+			if(unsigned(data_adc_in) > 50) then
+				start_alarm <= '1';
+			else
+				start_alarm <= '0';
+			end if;
+			
+		end if;
+	end process;
+end behav;

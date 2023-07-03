@@ -1,0 +1,14 @@
+
+State Machine - |Main|UART:UART_PORTMAP|state_uart
+Name state_uart.stop_ok state_uart.bit_stop state_uart.bit_data state_uart.bit_start state_uart.INIT 
+state_uart.INIT 0 0 0 0 0 
+state_uart.bit_start 0 0 0 1 1 
+state_uart.bit_data 0 0 1 0 1 
+state_uart.bit_stop 0 1 0 0 1 
+state_uart.stop_ok 1 0 0 0 1 
+
+State Machine - |Main|LCD:LCD_PORTMAP|state
+Name state.lcd_display state.lcd_init state.lcd_power_up 
+state.lcd_power_up 0 0 0 
+state.lcd_init 0 1 1 
+state.lcd_display 1 0 1 

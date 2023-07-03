@@ -1,10 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="PRJ_DSD">
-		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_7so.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_qlo.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_qlo.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_05h.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_ufh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_4dm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_6so.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_6ch.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -20,7 +20,9 @@ port (
 	eoc	: IN std_LOGIC;
 	clk_adc :  OUT    STD_LOGIC;
 	--for warring alarm
-	start_alarm_light : OUT std_LOGIC;
+	--start_alarm_light : OUT std_LOGIC;
+	led_warring : out std_LOGIC_VECTOR(17 downto 0);
+	led_bin : out std_LOGIC_VECTOR (7 downto 0);
 	--for LCD
 	 tt : out std_LOGIC;
 	 tt2 : out std_LOGIC;
@@ -109,5 +111,15 @@ begin
 		
 	DIV_CLK_PORTMAP : DIV_clk
 		port map (CLK,CLK_200);
-	start_alarm_light <= start_alarm;
+		
+	--start_alarm_light <= start_alarm;
+	led_bin <= data_adc_in;
+	process(start_alarm)
+	begin
+	      IF(start_alarm = '1') THEN  
+				led_warring <= "111111111111111111";
+          ELSE       
+				led_warring <= "000000000000000000";
+          END IF;
+	end process;
 end behav;
