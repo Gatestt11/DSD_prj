@@ -1,5 +1,5 @@
 Fitter report for PRJ_DSD
-Sat Jul 01 21:38:12 2023
+Sun Jul 09 10:27:08 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,15 +63,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 01 21:38:12 2023           ;
+; Fitter Status                      ; Successful - Sun Jul 09 10:27:08 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PRJ_DSD                                         ;
 ; Top-level Entity Name              ; PRJ_DSD                                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C70F896C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 611 / 68,416 ( < 1 % )                          ;
-;     Total combinational functions  ; 610 / 68,416 ( < 1 % )                          ;
+; Total logic elements               ; 623 / 68,416 ( < 1 % )                          ;
+;     Total combinational functions  ; 623 / 68,416 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 107 / 68,416 ( < 1 % )                          ;
 ; Total registers                    ; 107                                             ;
 ; Total pins                         ; 56 / 622 ( 9 % )                                ;
@@ -159,8 +159,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 779 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 779 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 792 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 792 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -183,7 +183,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 776     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 789     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -199,26 +199,26 @@ The pin-out file can be found in C:/Users/84778/OneDrive - Hanoi University of S
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 611 / 68,416 ( < 1 % ) ;
-;     -- Combinational with no register       ; 504                    ;
-;     -- Register only                        ; 1                      ;
-;     -- Combinational with a register        ; 106                    ;
+; Total logic elements                        ; 623 / 68,416 ( < 1 % ) ;
+;     -- Combinational with no register       ; 516                    ;
+;     -- Register only                        ; 0                      ;
+;     -- Combinational with a register        ; 107                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 227                    ;
-;     -- 3 input functions                    ; 139                    ;
-;     -- <=2 input functions                  ; 244                    ;
-;     -- Register only                        ; 1                      ;
+;     -- 4 input functions                    ; 240                    ;
+;     -- 3 input functions                    ; 129                    ;
+;     -- <=2 input functions                  ; 254                    ;
+;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 446                    ;
+;     -- normal mode                          ; 459                    ;
 ;     -- arithmetic mode                      ; 164                    ;
 ;                                             ;                        ;
 ; Total registers*                            ; 107 / 70,234 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 107 / 68,416 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,818 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 49 / 4,276 ( 1 % )     ;
+; Total LABs:  partially or completely used   ; 48 / 4,276 ( 1 % )     ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 56 / 622 ( 9 % )       ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
@@ -234,11 +234,11 @@ The pin-out file can be found in C:/Users/84778/OneDrive - Hanoi University of S
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 2% / 1% / 2%           ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 1%           ;
 ; Maximum fan-out                             ; 84                     ;
 ; Highest non-global fan-out                  ; 31                     ;
-; Total fan-out                               ; 2053                   ;
-; Average fan-out                             ; 2.64                   ;
+; Total fan-out                               ; 2094                   ;
+; Average fan-out                             ; 2.65                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -251,25 +251,25 @@ The pin-out file can be found in C:/Users/84778/OneDrive - Hanoi University of S
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 611 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
-;     -- Combinational with no register       ; 504                   ; 0                              ;
-;     -- Register only                        ; 1                     ; 0                              ;
-;     -- Combinational with a register        ; 106                   ; 0                              ;
+; Total logic elements                        ; 623 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
+;     -- Combinational with no register       ; 516                   ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Combinational with a register        ; 107                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 227                   ; 0                              ;
-;     -- 3 input functions                    ; 139                   ; 0                              ;
-;     -- <=2 input functions                  ; 244                   ; 0                              ;
-;     -- Register only                        ; 1                     ; 0                              ;
+;     -- 4 input functions                    ; 240                   ; 0                              ;
+;     -- 3 input functions                    ; 129                   ; 0                              ;
+;     -- <=2 input functions                  ; 254                   ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 446                   ; 0                              ;
+;     -- normal mode                          ; 459                   ; 0                              ;
 ;     -- arithmetic mode                      ; 164                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 107                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 107 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 49 / 4276 ( 1 % )     ; 0 / 4276 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 48 / 4276 ( 1 % )     ; 0 / 4276 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 56                    ; 0                              ;
@@ -285,8 +285,8 @@ The pin-out file can be found in C:/Users/84778/OneDrive - Hanoi University of S
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 2053                  ; 0                              ;
-;     -- Registered Connections               ; 429                   ; 0                              ;
+;     -- Total Connections                    ; 2094                  ; 0                              ;
+;     -- Registered Connections               ; 434                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -1348,20 +1348,20 @@ Note: User assignments will override these defaults. The user specified values a
 +---------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                       ; Library Name ;
 +---------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |PRJ_DSD                                          ; 611 (0)     ; 107 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 56   ; 0            ; 504 (0)      ; 1 (0)             ; 106 (0)          ; |PRJ_DSD                                                                                                                                                  ; work         ;
-;    |ADC_0808:ADC_PORTMAP|                         ; 57 (57)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (34)      ; 1 (1)             ; 22 (22)          ; |PRJ_DSD|ADC_0808:ADC_PORTMAP                                                                                                                             ; work         ;
+; |PRJ_DSD                                          ; 623 (0)     ; 107 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 56   ; 0            ; 516 (0)      ; 0 (0)             ; 107 (0)          ; |PRJ_DSD                                                                                                                                                  ; work         ;
+;    |ADC_0808:ADC_PORTMAP|                         ; 58 (58)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (35)      ; 0 (0)             ; 23 (23)          ; |PRJ_DSD|ADC_0808:ADC_PORTMAP                                                                                                                             ; work         ;
 ;    |DIV_clk:DIV_CLK_PORTMAP|                      ; 18 (18)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 8 (8)            ; |PRJ_DSD|DIV_clk:DIV_CLK_PORTMAP                                                                                                                          ; work         ;
-;    |LCD_CT:LCD_CT_PORTMAP|                        ; 236 (236)   ; 54 (54)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 182 (182)    ; 0 (0)             ; 54 (54)          ; |PRJ_DSD|LCD_CT:LCD_CT_PORTMAP                                                                                                                            ; work         ;
-;    |LCD_DATA:LCD_CONVERT_DATA|                    ; 244 (31)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 244 (31)     ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA                                                                                                                        ; work         ;
+;    |LCD_CT:LCD_CT_PORTMAP|                        ; 236 (236)   ; 54 (54)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 181 (181)    ; 0 (0)             ; 55 (55)          ; |PRJ_DSD|LCD_CT:LCD_CT_PORTMAP                                                                                                                            ; work         ;
+;    |LCD_DATA:LCD_CONVERT_DATA|                    ; 240 (31)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 240 (31)     ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA                                                                                                                        ; work         ;
 ;       |lpm_divide:Div0|                           ; 25 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (0)       ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0                                                                                                        ; work         ;
 ;          |lpm_divide_4dm:auto_generated|          ; 25 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (0)       ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated                                                                          ; work         ;
 ;             |sign_div_unsign_ekh:divider|         ; 25 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (0)       ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider                                              ; work         ;
 ;                |alt_u_div_uve:divider|            ; 25 (25)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider                        ; work         ;
-;       |lpm_divide:Div1|                           ; 157 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 157 (0)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1                                                                                                        ; work         ;
-;          |lpm_divide_6so:auto_generated|          ; 157 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 157 (0)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated                                                                          ; work         ;
-;             |abs_divider_jbg:divider|             ; 157 (8)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 157 (8)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider                                                  ; work         ;
+;       |lpm_divide:Div1|                           ; 153 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 153 (0)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1                                                                                                        ; work         ;
+;          |lpm_divide_6so:auto_generated|          ; 153 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 153 (0)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated                                                                          ; work         ;
+;             |abs_divider_jbg:divider|             ; 153 (8)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 153 (8)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider                                                  ; work         ;
 ;                |alt_u_div_i2f:divider|            ; 132 (132)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 132 (132)    ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider                            ; work         ;
-;                |lpm_abs_vr9:my_abs_num|           ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num                           ; work         ;
+;                |lpm_abs_vr9:my_abs_num|           ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num                           ; work         ;
 ;       |lpm_mult:Mult0|                            ; 28 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0                                                                                                         ; work         ;
 ;          |multcore:mult_core|                     ; 28 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (13)      ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core                                                                                      ; work         ;
 ;             |mpar_add:padder|                     ; 15 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
@@ -1372,7 +1372,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;                      |add_sub_6ch:auto_generated| ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated ; work         ;
 ;       |lpm_mult:Mult1|                            ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult1                                                                                                         ; work         ;
 ;          |multcore:mult_core|                     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |PRJ_DSD|LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult1|multcore:mult_core                                                                                      ; work         ;
-;    |UART_tx:UART_PORTMAP|                         ; 56 (56)     ; 22 (22)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (34)      ; 0 (0)             ; 22 (22)          ; |PRJ_DSD|UART_tx:UART_PORTMAP                                                                                                                             ; work         ;
+;    |UART_tx:UART_PORTMAP|                         ; 72 (72)     ; 22 (22)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 50 (50)      ; 0 (0)             ; 22 (22)          ; |PRJ_DSD|UART_tx:UART_PORTMAP                                                                                                                             ; work         ;
 +---------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1447,21 +1447,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                                ; Pad To Core Index ; Setting ;
 +------------------------------------------------------------------------------------+-------------------+---------+
 ; data_adc_in[0]                                                                     ;                   ;         ;
-;      - LCD_DATA:LCD_CONVERT_DATA|Add0~0                                            ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~0  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~1  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~2  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~9 ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~11 ; 0                 ; 6       ;
-;      - ADC_0808:ADC_PORTMAP|LessThan2~0                                            ; 0                 ; 6       ;
-;      - led_bin[0]                                                                  ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|Add0~0                                            ; 1                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~2 ; 1                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~4  ; 1                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~5  ; 1                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~6  ; 1                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~7  ; 1                 ; 6       ;
+;      - ADC_0808:ADC_PORTMAP|LessThan2~0                                            ; 1                 ; 6       ;
+;      - led_bin[0]                                                                  ; 1                 ; 6       ;
 ; data_adc_in[1]                                                                     ;                   ;         ;
 ;      - LCD_DATA:LCD_CONVERT_DATA|Add0~2                                            ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~0  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~1  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~2  ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~9 ; 0                 ; 6       ;
-;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~11 ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~2 ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~4  ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~5  ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~6  ; 0                 ; 6       ;
+;      - LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~7  ; 0                 ; 6       ;
 ;      - ADC_0808:ADC_PORTMAP|LessThan2~0                                            ; 0                 ; 6       ;
 ;      - led_bin[1]                                                                  ; 0                 ; 6       ;
 ; data_adc_in[2]                                                                     ;                   ;         ;
@@ -1496,21 +1496,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - led_bin[7]                                                                  ; 1                 ; 6       ;
 ; clk                                                                                ;                   ;         ;
 ; eoc                                                                                ;                   ;         ;
-;      - ADC_0808:ADC_PORTMAP|flag~3                                                 ; 1                 ; 6       ;
-;      - ADC_0808:ADC_PORTMAP|oe~0                                                   ; 1                 ; 6       ;
+;      - ADC_0808:ADC_PORTMAP|oe~0                                                   ; 0                 ; 6       ;
+;      - ADC_0808:ADC_PORTMAP|flag~1                                                 ; 0                 ; 6       ;
 ; start_TX                                                                           ;                   ;         ;
-;      - UART_tx:UART_PORTMAP|Selector16~2                                           ; 0                 ; 6       ;
-;      - UART_tx:UART_PORTMAP|Selector18~1                                           ; 0                 ; 6       ;
-;      - UART_tx:UART_PORTMAP|Selector18~2                                           ; 0                 ; 6       ;
-;      - UART_tx:UART_PORTMAP|Selector15~1                                           ; 0                 ; 6       ;
-;      - UART_tx:UART_PORTMAP|Selector19~2                                           ; 0                 ; 6       ;
+;      - UART_tx:UART_PORTMAP|Selector15~2                                           ; 1                 ; 6       ;
+;      - UART_tx:UART_PORTMAP|Selector15~5                                           ; 1                 ; 6       ;
+;      - UART_tx:UART_PORTMAP|Selector16~0                                           ; 1                 ; 6       ;
+;      - UART_tx:UART_PORTMAP|Selector15~6                                           ; 1                 ; 6       ;
+;      - UART_tx:UART_PORTMAP|Selector19~2                                           ; 1                 ; 6       ;
 ; reset_n                                                                            ;                   ;         ;
-;      - LCD_CT:LCD_CT_PORTMAP|state~12                                              ; 0                 ; 6       ;
-;      - LCD_CT:LCD_CT_PORTMAP|state~13                                              ; 0                 ; 6       ;
 ;      - LCD_CT:LCD_CT_PORTMAP|state~14                                              ; 0                 ; 6       ;
 ;      - LCD_CT:LCD_CT_PORTMAP|state~15                                              ; 0                 ; 6       ;
 ;      - LCD_CT:LCD_CT_PORTMAP|state~16                                              ; 0                 ; 6       ;
+;      - LCD_CT:LCD_CT_PORTMAP|state~17                                              ; 0                 ; 6       ;
 ;      - LCD_CT:LCD_CT_PORTMAP|state~18                                              ; 0                 ; 6       ;
+;      - LCD_CT:LCD_CT_PORTMAP|state~19                                              ; 0                 ; 6       ;
 +------------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1519,24 +1519,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                  ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; DIV_clk:DIV_CLK_PORTMAP|temp          ; LCFF_X45_Y46_N1    ; 23      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; LCD_CT:LCD_CT_PORTMAP|Selector50~0    ; LCCOMB_X56_Y35_N0  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~3 ; LCCOMB_X59_Y37_N12 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; UART_tx:UART_PORTMAP|Selector16~3     ; LCCOMB_X60_Y35_N10 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; UART_tx:UART_PORTMAP|cnt[13]~0        ; LCCOMB_X63_Y35_N12 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; UART_tx:UART_PORTMAP|index[3]~3       ; LCCOMB_X61_Y35_N12 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DIV_clk:DIV_CLK_PORTMAP|temp          ; LCFF_X94_Y27_N11   ; 23      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; LCD_CT:LCD_CT_PORTMAP|Selector50~0    ; LCCOMB_X42_Y38_N12 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~3 ; LCCOMB_X43_Y39_N4  ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; UART_tx:UART_PORTMAP|Selector19~1     ; LCCOMB_X52_Y36_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; UART_tx:UART_PORTMAP|cnt[13]~3        ; LCCOMB_X53_Y36_N6  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; UART_tx:UART_PORTMAP|index[3]~4       ; LCCOMB_X52_Y36_N14 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; clk                                   ; PIN_AD15           ; 84      ; Clock        ; yes    ; Global Clock         ; GCLK14           ; --                        ;
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                    ;
-+------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
-; Name                         ; Location        ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
-; DIV_clk:DIV_CLK_PORTMAP|temp ; LCFF_X45_Y46_N1 ; 23      ; Global Clock         ; GCLK10           ; --                        ;
-; clk                          ; PIN_AD15        ; 84      ; Global Clock         ; GCLK14           ; --                        ;
-+------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                     ;
++------------------------------+------------------+---------+----------------------+------------------+---------------------------+
+; Name                         ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------+------------------+---------+----------------------+------------------+---------------------------+
+; DIV_clk:DIV_CLK_PORTMAP|temp ; LCFF_X94_Y27_N11 ; 23      ; Global Clock         ; GCLK4            ; --                        ;
+; clk                          ; PIN_AD15         ; 84      ; Global Clock         ; GCLK14           ; --                        ;
++------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1545,48 +1545,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                                                     ; Fan-Out ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[26]~2                                                                                                                    ; 31      ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~18                                                                                                                        ; 28      ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~18                                                                                                                        ; 29      ;
 ; LCD_CT:LCD_CT_PORTMAP|ptr[0]                                                                                                                             ; 21      ;
 ; LCD_CT:LCD_CT_PORTMAP|ptr[1]                                                                                                                             ; 21      ;
 ; ADC_0808:ADC_PORTMAP|start_alarm                                                                                                                         ; 21      ;
 ; ADC_0808:ADC_PORTMAP|Add0~36                                                                                                                             ; 21      ;
 ; LCD_CT:LCD_CT_PORTMAP|ptr[3]                                                                                                                             ; 20      ;
-; ADC_0808:ADC_PORTMAP|LessThan1~4                                                                                                                         ; 20      ;
 ; LCD_CT:LCD_CT_PORTMAP|ptr[2]                                                                                                                             ; 18      ;
-; UART_tx:UART_PORTMAP|LessThan0~2                                                                                                                         ; 16      ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|add_sub_6_result_int[7]~10     ; 16      ;
+; ADC_0808:ADC_PORTMAP|LessThan1~4                                                                                                                         ; 17      ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|add_sub_6_result_int[7]~10     ; 17      ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_10_result_int[6]~10        ; 16      ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~60                                                                                                                            ; 15      ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_10_result_int[6]~10        ; 15      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_9_result_int[6]~10         ; 15      ;
+; LCD_CT:LCD_CT_PORTMAP|state.send                                                                                                                         ; 14      ;
 ; LCD_CT:LCD_CT_PORTMAP|state.initialize                                                                                                                   ; 13      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_8_result_int[6]~10         ; 13      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_7_result_int[6]~10         ; 13      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_6_result_int[6]~10         ; 13      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_5_result_int[6]~10         ; 13      ;
-; UART_tx:UART_PORTMAP|state_uart.IDLE                                                                                                                     ; 12      ;
-; LCD_CT:LCD_CT_PORTMAP|state.send                                                                                                                         ; 12      ;
+; UART_tx:UART_PORTMAP|index[0]                                                                                                                            ; 12      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_11_result_int[6]~10        ; 12      ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_4_result_int[5]~8          ; 12      ;
+; UART_tx:UART_PORTMAP|index[1]                                                                                                                            ; 11      ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan7~3                                                                                                                        ; 10      ;
 ; LCD_CT:LCD_CT_PORTMAP|state.line1                                                                                                                        ; 10      ;
-; UART_tx:UART_PORTMAP|index[0]                                                                                                                            ; 10      ;
-; UART_tx:UART_PORTMAP|state_uart.DATA_BITS                                                                                                                ; 10      ;
-; UART_tx:UART_PORTMAP|index[3]                                                                                                                            ; 10      ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~2                                                                                                                         ; 10      ;
-; UART_tx:UART_PORTMAP|cnt[13]~0                                                                                                                           ; 9       ;
+; UART_tx:UART_PORTMAP|cnt[13]~3                                                                                                                           ; 9       ;
+; UART_tx:UART_PORTMAP|state_uart.DATA_BITS                                                                                                                ; 9       ;
+; UART_tx:UART_PORTMAP|index[3]                                                                                                                            ; 9       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~62                                                                                                                            ; 9       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~0                                                                                                                         ; 9       ;
 ; data_adc_in[1]                                                                                                                                           ; 8       ;
 ; data_adc_in[0]                                                                                                                                           ; 8       ;
+; UART_tx:UART_PORTMAP|cnt[13]~2                                                                                                                           ; 8       ;
 ; LCD_CT:LCD_CT_PORTMAP|state.line2                                                                                                                        ; 8       ;
 ; LCD_CT:LCD_CT_PORTMAP|state.power_up                                                                                                                     ; 8       ;
 ; DIV_clk:DIV_CLK_PORTMAP|LessThan0~1                                                                                                                      ; 8       ;
 ; DIV_clk:DIV_CLK_PORTMAP|LessThan0~0                                                                                                                      ; 8       ;
-; UART_tx:UART_PORTMAP|index[1]                                                                                                                            ; 8       ;
 ; DIV_clk:DIV_CLK_PORTMAP|Add0~14                                                                                                                          ; 8       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~2                                                                                                                         ; 8       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~2                                                                                                                         ; 8       ;
+; LCD_CT:LCD_CT_PORTMAP|LessThan9~8                                                                                                                        ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|state.RESETLINE                                                                                                                    ; 7       ;
 ; UART_tx:UART_PORTMAP|temp[2]                                                                                                                             ; 7       ;
+; UART_tx:UART_PORTMAP|temp[1]                                                                                                                             ; 7       ;
+; UART_tx:UART_PORTMAP|Add0~18                                                                                                                             ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~24                                                                                                                            ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~22                                                                                                                            ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~20                                                                                                                            ; 7       ;
@@ -1597,26 +1597,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|Add0~10                                                                                                                            ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~8                                                                                                                             ; 7       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~6                                                                                                                             ; 7       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~6                                                                                                                         ; 7       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~0                                                                                                                         ; 7       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~0                                                                                                                         ; 7       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~4                                                                                                                         ; 7       ;
 ; reset_n                                                                                                                                                  ; 6       ;
+; UART_tx:UART_PORTMAP|state_uart.IDLE                                                                                                                     ; 6       ;
+; UART_tx:UART_PORTMAP|Selector19~1                                                                                                                        ; 6       ;
+; UART_tx:UART_PORTMAP|LessThan0~0                                                                                                                         ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan3~3                                                                                                                        ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[10]                                                                                                                      ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[9]                                                                                                                       ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[8]                                                                                                                       ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[7]                                                                                                                       ; 6       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[6]                                                                                                                       ; 6       ;
-; LCD_CT:LCD_CT_PORTMAP|clk_count[31]                                                                                                                      ; 6       ;
 ; UART_tx:UART_PORTMAP|index[2]                                                                                                                            ; 6       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[6]~14                        ; 6       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add2~10                                                                                                                        ; 6       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~2                                                                                                                         ; 6       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|add_sub_7_result_int[8]~12     ; 6       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~10                                                                                                                        ; 6       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~6                                                                                                                         ; 6       ;
 ; start_TX                                                                                                                                                 ; 5       ;
-; LCD_CT:LCD_CT_PORTMAP|Equal0~1                                                                                                                           ; 5       ;
+; LCD_CT:LCD_CT_PORTMAP|ptr[4]                                                                                                                             ; 5       ;
+; UART_tx:UART_PORTMAP|state_uart.STOP_BIT                                                                                                                 ; 5       ;
+; LCD_CT:LCD_CT_PORTMAP|line                                                                                                                               ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~3                                                                                                                    ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~1                                                                                                                    ; 5       ;
-; LCD_CT:LCD_CT_PORTMAP|LessThan9~6                                                                                                                        ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan4~3                                                                                                                        ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan5~0                                                                                                                        ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[2]                                                                                                                       ; 5       ;
@@ -1624,11 +1629,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|LessThan0~9                                                                                                                        ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[11]                                                                                                                      ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[5]                                                                                                                       ; 5       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~50                        ; 5       ;
+; UART_tx:UART_PORTMAP|temp[0]                                                                                                                             ; 5       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~13                        ; 5       ;
+; UART_tx:UART_PORTMAP|state_uart.START_BIT                                                                                                                ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~28                                                                                                                            ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~26                                                                                                                            ; 5       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~4                                                                                                                             ; 5       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|add_sub_7_result_int[8]~12     ; 5       ;
+; ADC_0808:ADC_PORTMAP|Add0~34                                                                                                                             ; 5       ;
+; ADC_0808:ADC_PORTMAP|Add0~32                                                                                                                             ; 5       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_12_result_int[6]~10        ; 5       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~6                                                                                                                         ; 5       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~0                                                                                                                         ; 5       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~8                                                                                                                         ; 5       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~2                                                                                                                         ; 5       ;
 ; data_adc_in[7]                                                                                                                                           ; 4       ;
@@ -1637,45 +1648,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; data_adc_in[4]                                                                                                                                           ; 4       ;
 ; data_adc_in[3]                                                                                                                                           ; 4       ;
 ; data_adc_in[2]                                                                                                                                           ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~58                        ; 4       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~22                        ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan6~5                                                                                                                        ; 4       ;
-; UART_tx:UART_PORTMAP|state_uart.TERMINATE                                                                                                                ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector50~0                                                                                                                       ; 4       ;
-; LCD_CT:LCD_CT_PORTMAP|Selector51~0                                                                                                                       ; 4       ;
-; LCD_CT:LCD_CT_PORTMAP|ptr[4]                                                                                                                             ; 4       ;
-; LCD_CT:LCD_CT_PORTMAP|Selector0~0                                                                                                                        ; 4       ;
-; UART_tx:UART_PORTMAP|Selector16~3                                                                                                                        ; 4       ;
-; UART_tx:UART_PORTMAP|index[3]~3                                                                                                                          ; 4       ;
-; UART_tx:UART_PORTMAP|state_uart.STOP_BIT                                                                                                                 ; 4       ;
-; LCD_CT:LCD_CT_PORTMAP|line                                                                                                                               ; 4       ;
+; LCD_CT:LCD_CT_PORTMAP|Equal0~1                                                                                                                           ; 4       ;
+; UART_tx:UART_PORTMAP|state_uart.TERMINATE                                                                                                                ; 4       ;
+; UART_tx:UART_PORTMAP|index[3]~4                                                                                                                          ; 4       ;
+; UART_tx:UART_PORTMAP|index[3]~2                                                                                                                          ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan7~5                                                                                                                        ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan1~2                                                                                                                        ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan2~3                                                                                                                        ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[4]                                                                                                                       ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[21]                                                                                                                      ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[18]                                                                                                                      ; 4       ;
-; ADC_0808:ADC_PORTMAP|Equal1~4                                                                                                                            ; 4       ;
-; UART_tx:UART_PORTMAP|temp[0]                                                                                                                             ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[0]~1                                            ; 4       ;
+; LCD_CT:LCD_CT_PORTMAP|clk_count[31]                                                                                                                      ; 4       ;
+; ADC_0808:ADC_PORTMAP|Equal1~5                                                                                                                            ; 4       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[1]~0                                            ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~53                        ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[6]~52                        ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[6]~51                        ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[2]~48                        ; 4       ;
-; UART_tx:UART_PORTMAP|temp[1]                                                                                                                             ; 4       ;
-; UART_tx:UART_PORTMAP|state_uart.START_BIT                                                                                                                ; 4       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~18                        ; 4       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[2]~17                        ; 4       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[6]~16                        ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|e                                                                                                                                  ; 4       ;
+; UART_tx:UART_PORTMAP|Add0~12                                                                                                                             ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~32                                                                                                                            ; 4       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~30                                                                                                                            ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_12_result_int[6]~10        ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~8                                                                                                                         ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add2~4                                                                                                                         ; 4       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~0                                                   ; 4       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~12                                                                                                                        ; 4       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~0                                                                                                                         ; 4       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[9]~60                        ; 3       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[10]~56                       ; 3       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[10]~55                       ; 3       ;
-; LCD_CT:LCD_CT_PORTMAP|state~9                                                                                                                            ; 3       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[9]~24                        ; 3       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[10]~21                       ; 3       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[10]~20                       ; 3       ;
+; LCD_CT:LCD_CT_PORTMAP|Equal0~0                                                                                                                           ; 3       ;
+; LCD_CT:LCD_CT_PORTMAP|Selector0~0                                                                                                                        ; 3       ;
+; UART_tx:UART_PORTMAP|LessThan2~2                                                                                                                         ; 3       ;
+; UART_tx:UART_PORTMAP|LessThan2~1                                                                                                                         ; 3       ;
+; UART_tx:UART_PORTMAP|LessThan2~0                                                                                                                         ; 3       ;
+; LCD_CT:LCD_CT_PORTMAP|LessThan9~2                                                                                                                        ; 3       ;
+; LCD_CT:LCD_CT_PORTMAP|state~11                                                                                                                           ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan8~0                                                                                                                        ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan1~1                                                                                                                        ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan2~4                                                                                                                        ; 3       ;
@@ -1684,19 +1692,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[1]                                                                                                                       ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector35~0                                                                                                                       ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~0                                                                                                                    ; 3       ;
+; LCD_CT:LCD_CT_PORTMAP|LessThan0~8                                                                                                                        ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[20]                                                                                                                      ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[19]                                                                                                                      ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[17]                                                                                                                      ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[13]                                                                                                                      ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[12]                                                                                                                      ; 3       ;
+; ADC_0808:ADC_PORTMAP|LessThan1~3                                                                                                                         ; 3       ;
 ; ADC_0808:ADC_PORTMAP|flag                                                                                                                                ; 3       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[2]~2                                            ; 3       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[2]~54                        ; 3       ;
+; UART_tx:UART_PORTMAP|Selector14~2                                                                                                                        ; 3       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[0]~1                                            ; 3       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[2]~19                        ; 3       ;
 ; UART_tx:UART_PORTMAP|index[3]~0                                                                                                                          ; 3       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[0]                                                                                                                      ; 3       ;
 ; ADC_0808:ADC_PORTMAP|start                                                                                                                               ; 3       ;
-; ADC_0808:ADC_PORTMAP|Add0~34                                                                                                                             ; 3       ;
-; ADC_0808:ADC_PORTMAP|Add0~32                                                                                                                             ; 3       ;
+; UART_tx:UART_PORTMAP|Add0~0                                                                                                                              ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~30                                                                                                                             ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~28                                                                                                                             ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~26                                                                                                                             ; 3       ;
@@ -1706,9 +1716,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ADC_0808:ADC_PORTMAP|Add0~18                                                                                                                             ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~16                                                                                                                             ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~14                                                                                                                             ; 3       ;
+; ADC_0808:ADC_PORTMAP|Add0~12                                                                                                                             ; 3       ;
+; ADC_0808:ADC_PORTMAP|Add0~10                                                                                                                             ; 3       ;
+; ADC_0808:ADC_PORTMAP|Add0~8                                                                                                                              ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~2                                                                                                                              ; 3       ;
 ; ADC_0808:ADC_PORTMAP|Add0~0                                                                                                                              ; 3       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~0                                                   ; 3       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add2~14                                                                                                                        ; 3       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add2~12                                                                                                                        ; 3       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add1~14                                                                                                                        ; 3       ;
@@ -1719,7 +1731,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|Add1~4                                                                                                                         ; 3       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~14                                                                                                                        ; 3       ;
 ; eoc                                                                                                                                                      ; 2       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~57                        ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[62]~162                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[50]~161                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[38]~160                   ; 2       ;
@@ -1733,11 +1744,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[45]~145                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[37]~143                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[39]~142                   ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|LessThan9~8                                                                                                                        ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|Equal0~0                                                                                                                           ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|Selector51~0                                                                                                                       ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]~4                                                                                                                    ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|state~11                                                                                                                           ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|state~10                                                                                                                           ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|state~13                                                                                                                           ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|state~12                                                                                                                           ; 2       ;
+; UART_tx:UART_PORTMAP|Selector16~0                                                                                                                        ; 2       ;
+; UART_tx:UART_PORTMAP|Selector15~5                                                                                                                        ; 2       ;
+; UART_tx:UART_PORTMAP|Selector15~4                                                                                                                        ; 2       ;
+; UART_tx:UART_PORTMAP|Selector15~3                                                                                                                        ; 2       ;
+; UART_tx:UART_PORTMAP|LessThan0~1                                                                                                                         ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector40~6                                                                                                                       ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector40~4                                                                                                                       ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector41~0                                                                                                                       ; 2       ;
@@ -1747,12 +1762,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|LessThan10~4                                                                                                                       ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan12~0                                                                                                                       ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan10~1                                                                                                                       ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|LessThan9~2                                                                                                                        ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|LessThan9~6                                                                                                                        ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|LessThan9~5                                                                                                                        ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan9~1                                                                                                                        ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|state~8                                                                                                                            ; 2       ;
+; LCD_CT:LCD_CT_PORTMAP|state~10                                                                                                                           ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan8~3                                                                                                                        ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan6~4                                                                                                                        ; 2       ;
-; LCD_CT:LCD_CT_PORTMAP|LessThan0~8                                                                                                                        ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[30]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[29]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[28]                                                                                                                      ; 2       ;
@@ -1767,13 +1782,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[16]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[15]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[14]                                                                                                                      ; 2       ;
-; UART_tx:UART_PORTMAP|TX~0                                                                                                                                ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[3]~3                                            ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add4~3                                                                                                                         ; 2       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|quotient[2]~2                                            ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add4~1                                                                                                                         ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add4~0                                                                                                                         ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[61]~128                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[49]~114                   ; 2       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~15                        ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[7]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[6]                                                                                                                      ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[5]                                                                                                                      ; 2       ;
@@ -1784,13 +1800,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_tx:UART_PORTMAP|TX                                                                                                                                  ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~16                                                                                                                             ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~14                                                                                                                             ; 2       ;
-; UART_tx:UART_PORTMAP|Add0~12                                                                                                                             ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~10                                                                                                                             ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~8                                                                                                                              ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~6                                                                                                                              ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~4                                                                                                                              ; 2       ;
 ; UART_tx:UART_PORTMAP|Add0~2                                                                                                                              ; 2       ;
-; UART_tx:UART_PORTMAP|Add0~0                                                                                                                              ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~58                                                                                                                            ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~56                                                                                                                            ; 2       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add0~54                                                                                                                            ; 2       ;
@@ -1811,11 +1825,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DIV_clk:DIV_CLK_PORTMAP|Add0~4                                                                                                                           ; 2       ;
 ; DIV_clk:DIV_CLK_PORTMAP|Add0~2                                                                                                                           ; 2       ;
 ; DIV_clk:DIV_CLK_PORTMAP|Add0~0                                                                                                                           ; 2       ;
-; ADC_0808:ADC_PORTMAP|Add0~12                                                                                                                             ; 2       ;
-; ADC_0808:ADC_PORTMAP|Add0~10                                                                                                                             ; 2       ;
-; ADC_0808:ADC_PORTMAP|Add0~8                                                                                                                              ; 2       ;
 ; ADC_0808:ADC_PORTMAP|Add0~6                                                                                                                              ; 2       ;
 ; ADC_0808:ADC_PORTMAP|Add0~4                                                                                                                              ; 2       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~4                                                   ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_10_result_int[3]~4         ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_10_result_int[2]~2         ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_10_result_int[1]~0         ; 2       ;
@@ -1838,21 +1850,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_4_result_int[2]~2          ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|add_sub_4_result_int[1]~0          ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add2~16                                                                                                                        ; 2       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~8                                                                                                                         ; 2       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add2~4                                                                                                                         ; 2       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~16                                                                                                                        ; 2       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[9]~59                        ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[9]~23                        ; 1       ;
 ; UART_tx:UART_PORTMAP|TX~2                                                                                                                                ; 1       ;
 ; UART_tx:UART_PORTMAP|TX~1                                                                                                                                ; 1       ;
-; ADC_0808:ADC_PORTMAP|oe~1                                                                                                                                ; 1       ;
-; ADC_0808:ADC_PORTMAP|oe~0                                                                                                                                ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~32                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~29                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~10                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[8]~7                         ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[34]~157                   ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector46~3                                                                                                                       ; 1       ;
-; ADC_0808:ADC_PORTMAP|flag~3                                                                                                                              ; 1       ;
-; UART_tx:UART_PORTMAP|Selector16~4                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Selector17~2                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector7~4                                                                                                                         ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~20                                                                                                                           ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[68]~156                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[69]~155                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[70]~154                   ; 1       ;
@@ -1863,23 +1870,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[40]~141                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[30]~140                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[30]~139                   ; 1       ;
-; UART_tx:UART_PORTMAP|Selector19~2                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector46~2                                                                                                                       ; 1       ;
-; UART_tx:UART_PORTMAP|Selector15~1                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Selector18~2                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Selector18~1                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector19~4                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector19~3                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector19~2                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector15~6                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector18~0                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector5~0                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector6~0                                                                                                                         ; 1       ;
-; UART_tx:UART_PORTMAP|Selector7~0                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector8~0                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector9~0                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector10~0                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector11~0                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Selector12~0                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector13~0                                                                                                                        ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~18                                                                                                                           ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~17                                                                                                                           ; 1       ;
+; UART_tx:UART_PORTMAP|Selector12~0                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|cnt[13]~1                                                                                                                           ; 1       ;
+; UART_tx:UART_PORTMAP|cnt[13]~0                                                                                                                           ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~19                                                                                                                           ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector51~3                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector51~2                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector51~1                                                                                                                       ; 1       ;
@@ -1892,9 +1899,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|Selector29~0                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector28~0                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector27~0                                                                                                                       ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~18                                                                                                                           ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~17                                                                                                                           ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|state~16                                                                                                                           ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~15                                                                                                                           ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~14                                                                                                                           ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector1~0                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector2~0                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector3~0                                                                                                                        ; 1       ;
@@ -1924,8 +1931,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[26]~1                                                                                                                    ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|clk_count[26]~0                                                                                                                    ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector0~1                                                                                                                        ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~13                                                                                                                           ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|state~12                                                                                                                           ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~15                                                                                                                           ; 1       ;
+; LCD_CT:LCD_CT_PORTMAP|state~14                                                                                                                           ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector40~8                                                                                                                       ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt~6                                                                                                                            ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt~5                                                                                                                            ; 1       ;
@@ -1934,7 +1941,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DIV_clk:DIV_CLK_PORTMAP|cnt~2                                                                                                                            ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt~1                                                                                                                            ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt~0                                                                                                                            ; 1       ;
-; ADC_0808:ADC_PORTMAP|flag~2                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|flag~1                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|flag~0                                                                                                                              ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt~18                                                                                                                              ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt~17                                                                                                                              ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt~16                                                                                                                              ; 1       ;
@@ -1961,19 +1969,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; UART_tx:UART_PORTMAP|Selector22~0                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector23~0                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector16~2                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|index[3]~4                                                                                                                          ; 1       ;
-; UART_tx:UART_PORTMAP|index[3]~2                                                                                                                          ; 1       ;
+; UART_tx:UART_PORTMAP|Selector16~1                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector17~0                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector15~2                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|Selector15~1                                                                                                                        ; 1       ;
+; UART_tx:UART_PORTMAP|index[3]~5                                                                                                                          ; 1       ;
+; UART_tx:UART_PORTMAP|index[3]~3                                                                                                                          ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[8]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[7]                                                                                                                              ; 1       ;
-; UART_tx:UART_PORTMAP|LessThan0~1                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[6]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[5]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[4]                                                                                                                              ; 1       ;
-; UART_tx:UART_PORTMAP|LessThan0~0                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[3]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[2]                                                                                                                              ; 1       ;
-; UART_tx:UART_PORTMAP|cnt[1]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|cnt[0]                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|cnt[1]                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|index[3]~1                                                                                                                          ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector37~0                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Selector38~2                                                                                                                       ; 1       ;
@@ -2038,7 +2048,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|LessThan10~2                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan11~1                                                                                                                       ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan11~0                                                                                                                       ; 1       ;
-; LCD_CT:LCD_CT_PORTMAP|LessThan9~5                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan9~4                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan9~3                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|LessThan10~0                                                                                                                       ; 1       ;
@@ -2088,44 +2097,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DIV_clk:DIV_CLK_PORTMAP|cnt[4]                                                                                                                           ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt[5]                                                                                                                           ; 1       ;
 ; DIV_clk:DIV_CLK_PORTMAP|cnt[6]                                                                                                                           ; 1       ;
-; ADC_0808:ADC_PORTMAP|LessThan1~3                                                                                                                         ; 1       ;
+; ADC_0808:ADC_PORTMAP|oe~1                                                                                                                                ; 1       ;
 ; ADC_0808:ADC_PORTMAP|LessThan1~2                                                                                                                         ; 1       ;
 ; ADC_0808:ADC_PORTMAP|LessThan1~1                                                                                                                         ; 1       ;
+; ADC_0808:ADC_PORTMAP|LessThan1~0                                                                                                                         ; 1       ;
+; ADC_0808:ADC_PORTMAP|oe~0                                                                                                                                ; 1       ;
 ; ADC_0808:ADC_PORTMAP|ale~0                                                                                                                               ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[18]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|Equal1~3                                                                                                                            ; 1       ;
+; ADC_0808:ADC_PORTMAP|Equal1~4                                                                                                                            ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[17]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|Equal1~2                                                                                                                            ; 1       ;
-; ADC_0808:ADC_PORTMAP|Equal1~1                                                                                                                            ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[16]                                                                                                                             ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[15]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|Equal1~0                                                                                                                            ; 1       ;
-; ADC_0808:ADC_PORTMAP|LessThan1~0                                                                                                                         ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[14]                                                                                                                             ; 1       ;
+; ADC_0808:ADC_PORTMAP|Equal1~3                                                                                                                            ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[13]                                                                                                                             ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[12]                                                                                                                             ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[11]                                                                                                                             ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[10]                                                                                                                             ; 1       ;
+; ADC_0808:ADC_PORTMAP|Equal1~2                                                                                                                            ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[9]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[8]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|Equal1~1                                                                                                                            ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[7]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[6]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|Equal1~0                                                                                                                            ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[5]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[4]                                                                                                                              ; 1       ;
+; ADC_0808:ADC_PORTMAP|cnt[3]                                                                                                                              ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[1]                                                                                                                              ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[2]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[3]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[4]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[5]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[6]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[7]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[8]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[9]                                                                                                                              ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[10]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[11]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[12]                                                                                                                             ; 1       ;
-; ADC_0808:ADC_PORTMAP|cnt[13]                                                                                                                             ; 1       ;
 ; ADC_0808:ADC_PORTMAP|cnt[0]                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|Selector14~4                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector14~3                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Selector14~2                                                                                                                        ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector14~1                                                                                                                        ; 1       ;
-; UART_tx:UART_PORTMAP|Mux0~2                                                                                                                              ; 1       ;
-; UART_tx:UART_PORTMAP|Mux0~1                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|TX~0                                                                                                                                ; 1       ;
+; UART_tx:UART_PORTMAP|Mux3~0                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|Mux0~0                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|Mux1~3                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|Mux1~2                                                                                                                              ; 1       ;
 ; UART_tx:UART_PORTMAP|Mux1~1                                                                                                                              ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add4~2                                                                                                                         ; 1       ;
 ; UART_tx:UART_PORTMAP|Mux1~0                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|Mux2~2                                                                                                                              ; 1       ;
+; UART_tx:UART_PORTMAP|Mux2~1                                                                                                                              ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add4~2                                                                                                                         ; 1       ;
+; UART_tx:UART_PORTMAP|Mux2~0                                                                                                                              ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[66]~138                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[66]~137                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[67]~136                   ; 1       ;
@@ -2179,7 +2194,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[27]~86                    ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[27]~85                    ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider|StageOut[28]~84                    ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~49                        ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num|cs1a[4]~12                        ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult1|multcore:mult_core|romout[0][6]~0                                                                               ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult1|multcore:mult_core|_~1                                                                                          ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult1|multcore:mult_core|_~0                                                                                          ; 1       ;
@@ -2196,18 +2211,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|StageOut[54]~1                 ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider|StageOut[54]~0                 ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[2][6]                                                                                 ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~11                                                                              ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][5]~10                                                                              ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~9                                                                              ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][6]~8                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][7]~7                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][8]~6                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][9]~5                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][10]~4                                                                              ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[2][7]~3                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~2                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~1                                                                               ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~0                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][8]~11                                                                              ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][9]~10                                                                              ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][10]~9                                                                              ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[2][7]~8                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][6]~7                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][7]~6                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][8]~5                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][9]~4                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][5]~3                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[0][10]~2                                                                              ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][6]~1                                                                               ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|romout[1][7]~0                                                                               ; 1       ;
 ; UART_tx:UART_PORTMAP|Selector14~0                                                                                                                        ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[3]                                                                                                                      ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|lcd_data_x[2]                                                                                                                      ; 1       ;
@@ -2221,7 +2236,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_CT:LCD_CT_PORTMAP|Add1~2                                                                                                                             ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add1~1                                                                                                                             ; 1       ;
 ; LCD_CT:LCD_CT_PORTMAP|Add1~0                                                                                                                             ; 1       ;
-; UART_tx:UART_PORTMAP|Add0~18                                                                                                                             ; 1       ;
 ; UART_tx:UART_PORTMAP|Add0~17                                                                                                                             ; 1       ;
 ; UART_tx:UART_PORTMAP|Add0~15                                                                                                                             ; 1       ;
 ; UART_tx:UART_PORTMAP|Add0~13                                                                                                                             ; 1       ;
@@ -2291,7 +2305,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ADC_0808:ADC_PORTMAP|Add0~1                                                                                                                              ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~6                                                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~5                                                   ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~4                                                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~3                                                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~2                                                   ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|op_1~1                                                   ; 1       ;
@@ -2378,9 +2391,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|Add1~13                                                                                                                        ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add1~11                                                                                                                        ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add1~9                                                                                                                         ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~7                                                                                                                         ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~5                                                                                                                         ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~3                                                                                                                         ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~10 ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~9  ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~8  ; 1       ;
@@ -2388,29 +2398,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~6  ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~5  ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~4  ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~3  ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~2  ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~1  ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~0  ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~16                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~15                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~14                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~13                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~12                      ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~7                                                                                                                         ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~5                                                                                                                         ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~3                                                                                                                         ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add1~1                                                                                                                         ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~3  ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~2  ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~1  ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_6ch:auto_generated|op_1~0  ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add0~15                                                                                                                        ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add0~13                                                                                                                        ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~11                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~10                      ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~9                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~8                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~7                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~6                       ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add0~15                                                                                                                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add0~13                                                                                                                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add0~11                                                                                                                        ; 1       ;
-; LCD_DATA:LCD_CONVERT_DATA|Add1~1                                                                                                                         ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~5                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~4                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~3                       ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2ch:auto_generated|op_1~1                       ; 1       ;
+; LCD_DATA:LCD_CONVERT_DATA|Add0~11                                                                                                                        ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~9                                                                                                                         ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~7                                                                                                                         ; 1       ;
 ; LCD_DATA:LCD_CONVERT_DATA|Add0~5                                                                                                                         ; 1       ;
@@ -2424,146 +2437,148 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-------------------------+
 ; Other Routing Resource Type ; Usage                   ;
 +-----------------------------+-------------------------+
-; Block interconnects         ; 701 / 197,592 ( < 1 % ) ;
-; C16 interconnects           ; 20 / 6,270 ( < 1 % )    ;
-; C4 interconnects            ; 284 / 123,120 ( < 1 % ) ;
-; Direct links                ; 254 / 197,592 ( < 1 % ) ;
+; Block interconnects         ; 716 / 197,592 ( < 1 % ) ;
+; C16 interconnects           ; 13 / 6,270 ( < 1 % )    ;
+; C4 interconnects            ; 291 / 123,120 ( < 1 % ) ;
+; Direct links                ; 265 / 197,592 ( < 1 % ) ;
 ; Global clocks               ; 2 / 16 ( 13 % )         ;
-; Local interconnects         ; 306 / 68,416 ( < 1 % )  ;
-; R24 interconnects           ; 36 / 5,926 ( < 1 % )    ;
-; R4 interconnects            ; 339 / 167,484 ( < 1 % ) ;
+; Local interconnects         ; 293 / 68,416 ( < 1 % )  ;
+; R24 interconnects           ; 34 / 5,926 ( < 1 % )    ;
+; R4 interconnects            ; 368 / 167,484 ( < 1 % ) ;
 +-----------------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.47) ; Number of LABs  (Total = 49) ;
+; Number of Logic Elements  (Average = 12.98) ; Number of LABs  (Total = 48) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 3                            ;
+; 1                                           ; 2                            ;
 ; 2                                           ; 2                            ;
-; 3                                           ; 1                            ;
-; 4                                           ; 2                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 1                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 3                            ;
+; 8                                           ; 3                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 0                            ;
 ; 13                                          ; 3                            ;
-; 14                                          ; 2                            ;
+; 14                                          ; 7                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 26                           ;
+; 16                                          ; 24                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.53) ; Number of LABs  (Total = 49) ;
+; LAB-wide Signals  (Average = 0.54) ; Number of LABs  (Total = 48) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 24                           ;
-; 1 Clock enable                     ; 2                            ;
+; 1 Clock                            ; 23                           ;
+; 1 Clock enable                     ; 3                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 14.24) ; Number of LABs  (Total = 49) ;
+; Number of Signals Sourced  (Average = 14.79) ; Number of LABs  (Total = 48) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 2                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 1                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 0                            ;
 ; 4                                            ; 2                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 1                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 2                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 2                            ;
-; 13                                           ; 6                            ;
-; 14                                           ; 2                            ;
-; 15                                           ; 6                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 3                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 8                            ;
+; 15                                           ; 5                            ;
 ; 16                                           ; 4                            ;
-; 17                                           ; 1                            ;
-; 18                                           ; 1                            ;
+; 17                                           ; 3                            ;
+; 18                                           ; 2                            ;
 ; 19                                           ; 2                            ;
-; 20                                           ; 3                            ;
-; 21                                           ; 4                            ;
-; 22                                           ; 2                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 5                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.63) ; Number of LABs  (Total = 49) ;
+; Number of Signals Sourced Out  (Average = 8.35) ; Number of LABs  (Total = 48) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 5                            ;
+; 1                                               ; 4                            ;
 ; 2                                               ; 1                            ;
-; 3                                               ; 2                            ;
-; 4                                               ; 2                            ;
-; 5                                               ; 7                            ;
-; 6                                               ; 3                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 4                            ;
-; 9                                               ; 7                            ;
-; 10                                              ; 5                            ;
-; 11                                              ; 7                            ;
-; 12                                              ; 0                            ;
+; 3                                               ; 4                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 4                            ;
+; 7                                               ; 2                            ;
+; 8                                               ; 8                            ;
+; 9                                               ; 4                            ;
+; 10                                              ; 6                            ;
+; 11                                              ; 4                            ;
+; 12                                              ; 3                            ;
 ; 13                                              ; 3                            ;
-; 14                                              ; 0                            ;
+; 14                                              ; 1                            ;
 ; 15                                              ; 0                            ;
-; 16                                              ; 2                            ;
+; 16                                              ; 3                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.02) ; Number of LABs  (Total = 49) ;
+; Number of Distinct Inputs  (Average = 12.85) ; Number of LABs  (Total = 48) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
-; 3                                            ; 1                            ;
-; 4                                            ; 3                            ;
-; 5                                            ; 2                            ;
-; 6                                            ; 2                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 2                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 3                            ;
+; 6                                            ; 3                            ;
 ; 7                                            ; 2                            ;
 ; 8                                            ; 4                            ;
-; 9                                            ; 5                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 6                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 4                            ;
+; 12                                           ; 4                            ;
 ; 13                                           ; 1                            ;
 ; 14                                           ; 3                            ;
-; 15                                           ; 2                            ;
-; 16                                           ; 2                            ;
-; 17                                           ; 1                            ;
+; 15                                           ; 3                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 2                            ;
 ; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 1                            ;
 ; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
+; 22                                           ; 2                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 2                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
 ; 29                                           ; 0                            ;
-; 30                                           ; 2                            ;
+; 30                                           ; 1                            ;
 ; 31                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
@@ -2631,14 +2646,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X48_Y26 to location X59_Y38
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X36_Y39 to location X47_Y51
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.58 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.36 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 44 output pins without output pin load capacitance assignment
     Info (306007): Pin "TX" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2688,15 +2703,15 @@ Warning (306006): Found 44 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/84778/OneDrive - Hanoi University of Science and Technology/Desktop/PRJ_FPGA/DSD_VHDL/output_files/PRJ_DSD.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4980 megabytes
-    Info: Processing ended: Sat Jul 01 21:38:12 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4981 megabytes
+    Info: Processing ended: Sun Jul 09 10:27:08 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+

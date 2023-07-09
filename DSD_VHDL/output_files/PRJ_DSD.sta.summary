@@ -3,16 +3,16 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -7.213
-TNS   : -431.545
+Slack : -7.285
+TNS   : -432.675
 
 Type  : Slow Model Setup 'DIV_clk:DIV_CLK_PORTMAP|temp'
-Slack : -3.989
-TNS   : -81.651
+Slack : -4.579
+TNS   : -91.181
 
 Type  : Slow Model Hold 'clk'
-Slack : -2.719
-TNS   : -2.719
+Slack : -2.711
+TNS   : -2.711
 
 Type  : Slow Model Hold 'DIV_clk:DIV_CLK_PORTMAP|temp'
 Slack : 0.391
@@ -27,16 +27,16 @@ Slack : -0.500
 TNS   : -23.000
 
 Type  : Fast Model Setup 'clk'
-Slack : -2.856
-TNS   : -150.065
+Slack : -2.754
+TNS   : -150.337
 
 Type  : Fast Model Setup 'DIV_clk:DIV_CLK_PORTMAP|temp'
-Slack : -1.228
-TNS   : -24.973
+Slack : -1.486
+TNS   : -28.618
 
 Type  : Fast Model Hold 'clk'
-Slack : -1.710
-TNS   : -1.710
+Slack : -1.698
+TNS   : -1.698
 
 Type  : Fast Model Hold 'DIV_clk:DIV_CLK_PORTMAP|temp'
 Slack : 0.215

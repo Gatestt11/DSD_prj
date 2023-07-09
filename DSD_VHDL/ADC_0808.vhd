@@ -47,7 +47,7 @@ begin
 			end if;
 			
 			
-			if(cnt >= 400000) then		-- cycle time 2s to recives data
+			if(cnt >= 450000) then		-- cycle time 2.5	s to recives data
 				oe <= '0';	
 				start_tx <= '0';
 				cnt:= 0;

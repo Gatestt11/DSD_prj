@@ -679,6 +679,10 @@ line2_buffer[124] <= <VCC>
 line2_buffer[125] <= <GND>
 line2_buffer[126] <= <VCC>
 line2_buffer[127] <= <GND>
+tram1[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tram1[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tram1[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tram1[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 chuc1[0] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
 chuc1[1] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
 chuc1[2] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
@@ -724,14 +728,18 @@ CLK => cnt[12].CLK
 CLK => cnt[13].CLK
 CLK => state_uart~6.DATAIN
 TX <= TX~reg0.DB_MAX_OUTPUT_PORT_TYPE
-chuc1[0] => Mux0.IN7
-chuc1[1] => Mux0.IN6
-chuc1[2] => Mux0.IN5
-chuc1[3] => Mux0.IN4
-dv1[0] => Mux1.IN7
-dv1[1] => Mux1.IN6
-dv1[2] => Mux1.IN5
-dv1[3] => Mux1.IN4
+tram1[0] => Mux0.IN7
+tram1[1] => Mux0.IN6
+tram1[2] => Mux0.IN5
+tram1[3] => Mux0.IN4
+chuc1[0] => Mux1.IN7
+chuc1[1] => Mux1.IN6
+chuc1[2] => Mux1.IN5
+chuc1[3] => Mux1.IN4
+dv1[0] => Mux2.IN7
+dv1[1] => Mux2.IN6
+dv1[2] => Mux2.IN5
+dv1[3] => Mux2.IN4
 
 
 |PRJ_DSD|ADC_0808:ADC_PORTMAP

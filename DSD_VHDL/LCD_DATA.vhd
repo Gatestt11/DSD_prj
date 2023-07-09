@@ -8,6 +8,7 @@ port (
 	start_alarm : in  std_logic;
 	line1_buffer : out std_logic_vector(127 downto 0);
 	line2_buffer : out std_logic_vector(127 downto 0);
+	tram1 : out integer range 0 to 9 :=0;
 	chuc1 : out integer range 0 to 9 :=0;
 	dv1 : out integer range 0 to 9 :=0
 );
@@ -26,8 +27,9 @@ begin
 	line2_buffer(39 downto 24) <= x"6F43";
 
 	data_integer <= to_integer(unsigned(data));
-	data_temp <= data_integer*5*100/256 + 13;
+	data_temp <= data_integer*5*100/256 +13;
 	temp_tram <= data_temp/100;
+	tram1 <= temp_tram;
 	temp_chuc <= (data_temp - temp_tram*100)/10;
 	chuc1 <= temp_chuc;
 	temp_dv <= data_temp - temp_tram*100-temp_chuc*10;
